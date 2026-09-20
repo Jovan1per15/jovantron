@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact — Jordan Lee</title>
+<meta name="description" content="Get in touch with Jordan Lee about a design project." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="logo">Jordan Lee</a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html" aria-current="page">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Let's talk about your project</h2>
+      </div>
+
+      <div class="contact-layout">
+        <ul class="contact-list">
+          <li>
+            <span class="label">Email</span>
+            <a href="mailto:hello@jordanlee.design">hello@jordanlee.design</a>
+          </li>
+          <li>
+            <span class="label">Phone</span>
+            <a href="tel:+15555550142">(555) 555-0142</a>
+          </li>
+          <li>
+            <span class="label">Instagram</span>
+            <a href="#">@jordanleedesign</a>
+          </li>
+          <li>
+            <span class="label">Based in</span>
+            <a href="#" tabindex="-1" style="cursor: default;">Chicago, IL</a>
+          </li>
+        </ul>
+
+        <!--
+          This form has no backend yet. To make it actually send messages,
+          connect it to a form service like Formspree, Getform, or Netlify
+          Forms (if you host there), or wire the button to open a mailto:
+          link as a quick placeholder.
+        -->
+        <form class="contact-form" action="#" method="post">
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="field">
+            <label for="message">Tell me about your project</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="align-self: flex-start;">Send message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 Jordan Lee</span>
+    <a href="mailto:hello@jordanlee.design">hello@jordanlee.design</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
